@@ -14,7 +14,7 @@ export const createOrGetUser = async (response: any, addUser: any) => {
     image: picture,
   };
   addUser(user);
-  await axios.post(`http://localhost:3000/api/auth`, user);
+  await axios.post(`${BASE_URL}/api/auth`, user);
 }
 // export const createOrGetUser = async (response: any, addUser: any) => {
 //   var base64Url = response.credential.split('.')[1];
