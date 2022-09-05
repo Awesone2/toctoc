@@ -7,8 +7,12 @@ import { MdOutlineCancel } from 'react-icons/md';
 import { BsFillPlayFill } from 'react-icons/bs';
 import { HiVolumeUp, HiVolumeOff } from 'react-icons/hi';
 import axios from 'axios';
+import LikeButton from '../../components/LikeButton';
+import Comments from '../../components/Comments';
+
 import { BASE_URL } from '../../utils';
 import { Video } from '../../types';
+import useAuthStore from '../../store/authStore';
 
 interface IProps {
   postDetails: Video
@@ -20,6 +24,7 @@ const Detail = ({postDetails}: IProps) => {
   const [playing, setPlaying] = useState(false);
   const [isVideoMuted, setIsVideoMuted] = useState(false);
   const router = useRouter();
+  const { userProfile } : any= useAuthStore();
   const onVideoClick = ()=> {
     if(playing) {
       videoRef?.current?.pause();
@@ -36,6 +41,16 @@ const Detail = ({postDetails}: IProps) => {
     }
   }, [post, isVideoMuted])
 
+  const handleLike = async(like: boolean)=> {
+    if(userProfile) {
+      const {data} = await axios.put(`${BASE_URL}/api/like`, {
+        userId: userProfile._id,
+        postId: post._id,
+        like
+      })
+      setpost({ ...post, likes: data.likes})
+    }
+  }
   if(!post) return null;
 
   return (
@@ -76,6 +91,48 @@ const Detail = ({postDetails}: IProps) => {
             <HiVolumeUp
             className="text-white text-2xl lg:text-4xl"/>
           </button>)}
+        </div>
+      </div>
+      <div className="relative w-[1000px] md:w-[900px] lg:w-[700px]">
+        <div className="lg:mt-20 mt-10">
+          <div className="flex gap-3 p-2 cursor-pointer font-semibold rounded">
+            <div className="ml:4 md:w-20 md:h-20 w-16 h-16">
+              <Link href="/">
+                <>
+                  <Image
+                    width={62}
+                    height={62}
+                    className="rounded-full"
+                    src={post.postedBy.image}
+                    alt="profile phoot"
+                    layout="responsive"
+                  />
+                </>
+              </Link>
+            </div>
+            <div>
+              <Link href="/">
+                <div className="mt-3 flex flex-col gap-2">
+                  <p className="flex gap-2 items-center md:text-md font-bold text-primary">{post.postedBy.userName}{`
+                  `}
+                  <GoVerified
+                    className="text-blue-400 text-md"/>
+                  </p>
+                  <p className="capitalized font-medium text-xs text-gray-500 hidden md:block">{post.postedBy.userName}</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <p className="px-10 text-lg text-gray-600">{post.caption}</p>
+          <div className="mt-10 px-10">
+            {userProfile && (
+              <LikeButton
+                likes={post.likes}
+                handleLike={()=>handleLike(true)}
+                handleDislike={()=>handleLike(false)}/>
+            )}
+          </div>
+          <Comments />
         </div>
       </div>
     </div>
