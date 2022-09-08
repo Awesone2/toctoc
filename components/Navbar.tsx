@@ -62,7 +62,7 @@ const Navbar = () => {
           <Link href="/upload">
             <button className="border-2 px-2 md:px-4 text-md font-semibold flex items-center gap-2">
               <IoMdAdd className="text-xl"/> {` `}
-              <span className="hidden md:block">Upload</span>
+              <span className="hidden md:block text-[#3b82f6]">Upload</span>
             </button>
           </Link>
           {user.image && (
@@ -85,7 +85,7 @@ const Navbar = () => {
             googleLogout();
             removeUser();
           }}>
-            <AiOutlineLogout color='red' fontSize={21} />
+            <AiOutlineLogout color='blue' fontSize={21} />
           </button>
         </div>
       ): (
