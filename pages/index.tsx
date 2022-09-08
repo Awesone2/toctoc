@@ -7,8 +7,7 @@ import { BASE_URL } from '../utils';
 interface IProps {
   videos: Video[];
 }
-const Home: NextPage = ({videos}: IProps) => {
-  console.log(videos);
+const Home = ({ videos }: IProps) => {
   return (
     <div className="flex flex-col gap-10 videos h-full">
       {videos.length? (
@@ -43,4 +42,4 @@ export const getServerSideProps = async ({
     }
   }
 }
-export default Home
+export default Home;
