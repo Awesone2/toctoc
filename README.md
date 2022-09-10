@@ -18,6 +18,7 @@ This is a fullstack project about a video-sharing social media platform, which a
 ## **Components**
 
 **1. Main Page**
+![main](https://user-images.githubusercontent.com/26387488/189463065-08e7094e-f067-4570-89ed-33609b476b1d.gif)
 
 **2. Upload Videos**
 
