@@ -1,5 +1,5 @@
 This is a fullstack project about a video-sharing social media platform, which allows users to share, like, and comment on video postings. 
-![Screen Shot 2022-09-09 at 17 27 55](https://user-images.githubusercontent.com/26387488/189461681-2be06429-bf41-41c3-a294-d6e3369b9ec2.png)
+![Screen Shot 2022-09-09 at 17 27 55](https://user-images.githubusercontent.com/26387488/189461681-2be06429-bf41-41c3-a294-d6e3369b9ec2.png){width=200}
 
 
 ## Getting Started
