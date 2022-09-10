@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a fullstack project about a video-sharing social media platform, which allows users to share, like, and comment on video postings. 
+![Screen Shot 2022-09-09 at 17 27 55](https://user-images.githubusercontent.com/26387488/189461681-2be06429-bf41-41c3-a294-d6e3369b9ec2.png)
+
 
 ## Getting Started
 
