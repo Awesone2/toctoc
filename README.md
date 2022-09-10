@@ -21,6 +21,7 @@ This is a fullstack project about a video-sharing social media platform, which a
 ![upload](https://user-images.githubusercontent.com/26387488/189464248-6785b687-431b-4d57-a6db-21847edbae60.gif)
 
 **3. Search Videos**
+![search](https://user-images.githubusercontent.com/26387488/189464379-2c4d2b75-4b8c-4eb9-a3a8-03e29fc6f172.gif)
 
 **4. Video Detail Page**
 
