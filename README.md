@@ -15,3 +15,16 @@ This is a fullstack project about a video-sharing social media platform, which a
 **_npm run dev_**: begin webpack for the client.<br>
 **_sanity start_**: run the backend server.<br>
 
+## **Components**
+
+**1. Main Page**
+
+**2. Upload Videos**
+
+**3. Search Videos**
+
+**4. Video Detail Page**
+
+## **Credits**
+- [Fan Zhang](https://github.com/AliciaFZhang) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aliciafanzhang/) 
+- [Jin Peng](https://github.com/jinp1031)  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jinpeng307/) 
