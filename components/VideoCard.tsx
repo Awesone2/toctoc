@@ -78,24 +78,24 @@ const VideoCard: NextPage<IProps> = ({ post }) => {
               src={post.video.asset.url}></video>
           </Link>
           {isHover && (
-            <div className="absolute bottom-8 xl:left-[280px] sm:left-[40px] md:left-[60px] lg:left-[280px] cursor-pointer flex gap-10 w-[100px] md:w-[50px] lg:w-[600px] p-3 ">
+            <div className="absolute bottom-8 xl:left-[250px] sm:left-[40px] md:left-[60px] lg:left-[280px] cursor-pointer flex gap-10 w-[100px] md:w-[50px] lg:w-[600px] p-3 ">
               {playing ? (
                 <button onClick={onVideoPress}>
                   <BsFillPauseFill
-                  className="text-white text-2xl lg:text-4xl" />
+                  className="text-[#3b82f6] text-2xl lg:text-4xl" />
                 </button>
               ): (<button onClick={onVideoPress}>
                 <BsFillPlayFill
-                className="text-white text-2xl lg:text-4xl"/>
+                className="text-[#3b82f6] text-2xl lg:text-4xl"/>
               </button>)}
               {isVideoMuted ? (
                 <button onClick={()=> setIsVideoMuted(false)}>
                   <HiVolumeOff
-                  className="text-white text-2xl lg:text-4xl" />
+                  className="text-[#3b82f6] text-2xl lg:text-4xl" />
                 </button>
               ): (<button onClick={()=> setIsVideoMuted(true)}>
                 <HiVolumeUp
-                className="text-white text-2xl lg:text-4xl"/>
+                className="text-[#3b82f6] text-2xl lg:text-4xl"/>
               </button>)}
             </div>
           )}
