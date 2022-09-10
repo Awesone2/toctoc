@@ -1,34 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TocToc
 
-## Getting Started
+## **Description**
+This is a fullstack project about a video-sharing social media platform, which allows users to share, like, and comment on video postings. 
 
-First, run the development server:
+## Technologies
+![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## **Installation**
+**_npm install_**: install necessary dependencies for this project.<br>
+**_npm run dev_**: begin webpack for the client.<br>
+**_sanity start_**: run the backend server.<br>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## **Components**
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+**1. Main Page**
+![main](https://user-images.githubusercontent.com/26387488/189463065-08e7094e-f067-4570-89ed-33609b476b1d.gif)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+**2. Upload Videos**
+![upload](https://user-images.githubusercontent.com/26387488/189464248-6785b687-431b-4d57-a6db-21847edbae60.gif)
 
-## Learn More
+**3. Search Videos**
+![search](https://user-images.githubusercontent.com/26387488/189464379-2c4d2b75-4b8c-4eb9-a3a8-03e29fc6f172.gif)
 
-To learn more about Next.js, take a look at the following resources:
+**4. Video Detail Page**
+![detailed](https://user-images.githubusercontent.com/26387488/189464782-59c89c1c-3bd1-4cdc-8825-cfad58128349.gif)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## **Credits**
+- [Fan Zhang](https://github.com/AliciaFZhang) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aliciafanzhang/) 
+- [Jin Peng](https://github.com/jinp1031)  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jinpeng307/) 
